@@ -71,6 +71,8 @@ or commit history.*
 ---
 
 ## Project Structure
+
+```
 windows-security-log-analyzer/
 ├── login_analyzer.py        # Core logic: pull, analyze, report, alert
 ├── setup_env.example.ps1    # Credential setup template (placeholders only)
@@ -80,6 +82,7 @@ windows-security-log-analyzer/
 ├── screenshots/             # Visual proof of execution
 └── docs/
 └── setup_guide.md       # Full setup and deployment instructions
+```
 
 ---
 
