@@ -1,12 +1,11 @@
 # Windows Security Event Log Analyzer
 
-A Python automation tool that pulls Windows Security Event Log data,
-identifies brute force login patterns, generates formatted reports,
-and sends real-time email alerts — running on a daily schedule with
-no manual intervention.
+A Python automation tool that monitors the Windows Security Event Log
+for brute force login patterns, generates formatted reports, and sends
+real-time email alerts on a fully automated daily schedule.
 
-Built as a practical SOC skill demonstration: real event log data,
-real alerting logic, real credential hygiene.
+Built as a hands-on SOC skill demonstration using real event log data,
+real alerting logic, and proper credential handling.
 
 ---
 
@@ -30,13 +29,13 @@ Nobody's watching that log manually. This tool watches it automatically.
 - Flags accounts exceeding a configurable **brute force threshold**
 - Generates a timestamped, formatted `.txt` report on every run
 - Sends an **automated Gmail SMTP alert** when suspects are detected
-- Runs **daily at 6 AM via Windows Task Scheduler** — fully automated
-- All credentials stored as **Windows environment variables** —
-  never hardcoded, never in version control
+- Runs **daily at 6 AM via Windows Task Scheduler** with no manual execution required
+- All credentials stored as **Windows environment variables**,
+  never hardcoded or committed to version control
 
-This directly maps to what a SIEM correlation rule does at the
-platform level — except built from scratch against the raw event log.
-The detection logic mirrors [MITRE ATT&CK T1110 — Brute Force](https://attack.mitre.org/techniques/T1110/).
+This maps directly to what a SIEM correlation rule does at the platform
+level, built from scratch against the raw event log. Detection logic
+aligns with [MITRE ATT&CK T1110 — Brute Force](https://attack.mitre.org/techniques/T1110/).
 
 ---
 
@@ -157,10 +156,8 @@ from being committed even if someone forgets.
 `failed_logins_*.txt` and blocked by `.gitignore`. `SAMPLE_REPORT.txt`
 contains entirely fictional data from an isolated test environment.
 
-**Email only fires on real detections.** The `--email` flag is
-opt-in, and even when passed, the SMTP call only executes when
-suspects actually exceed the threshold. A clean run produces no
-network traffic beyond the log query.
+**Email only fires on real detections.** The --email flag is opt-in and only sends when suspects are actually found.
+A clean scan produces no alerts.
 
 ---
 
