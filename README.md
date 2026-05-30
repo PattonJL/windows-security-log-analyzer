@@ -44,22 +44,26 @@ The detection logic mirrors [MITRE ATT&CK T1110 — Brute Force](https://attack.
 
 ### Terminal Output
 ![Terminal Output](screenshots/01_terminal_output.png)
+
 *Running `--days 7 --threshold 1 --email` — formatted report output
 with suspect flagging, file save confirmation, and email delivery
 confirmation in a single terminal session.*
 
 ### Email Alert
 ![Email Alert](screenshots/02_email_alert.png)
+
 *Automated Gmail alert showing machine name, timestamp, timeframe,
 and full report body — delivered before the workday starts.*
 
 ### Task Scheduler
 ![Task Scheduler](screenshots/03_task_scheduler.png)
+
 *Daily 6 AM scheduled job configured with highest privileges,
 running automatically with no manual execution.*
 
 ### Environment Variables
 ![Environment Variables](screenshots/04_env_variables.png)
+
 *Gmail credentials stored as Windows user environment variables.
 Values redacted. No credentials exist anywhere in the codebase
 or commit history.*
