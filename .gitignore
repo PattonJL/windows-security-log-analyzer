@@ -1,0 +1,26 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Generated reports — never commit real log data
+failed_logins_*.txt
+
+# The real setup_env.ps1 should be deleted after use, never committed
+# This pattern catches it if someone forgets
+setup_env.ps1
+
+# Credential and environment files
+.env
+*.env
+secrets.txt
+credentials.txt
+
+# VS Code
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+*.lnk

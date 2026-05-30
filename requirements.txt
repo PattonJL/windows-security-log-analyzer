@@ -1,0 +1,6 @@
+# No third-party dependencies required.
+# This tool uses only the Python standard library:
+#   subprocess, json, smtplib, argparse, os,
+#   email.mime, collections, datetime
+#
+# Requires: Python 3.8+ and Windows (PowerShell access)

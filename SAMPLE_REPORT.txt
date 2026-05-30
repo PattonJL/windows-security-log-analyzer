@@ -1,0 +1,45 @@
+============================================================
+       FAILED LOGIN ANALYSIS REPORT
+       Generated : 2026-05-28 06:00:14
+       Timeframe : Last 168 hour(s)
+============================================================
+
+  Total Failed Attempts: 47
+
+────────────────────────────────────────────────────────────
+  TOP TARGETED USERNAMES
+────────────────────────────────────────────────────────────
+  administrator                    23  ████████████████████████
+  jsmith                            7  ███████
+  guest                             4  ████
+  dbadmin                           3  ███
+
+────────────────────────────────────────────────────────────
+  TOP SOURCE IP ADDRESSES
+────────────────────────────────────────────────────────────
+  192.168.1.105                    23  ████████████████████████
+  10.0.0.88                         7  ███████
+  10.0.0.12                         4  ████
+
+────────────────────────────────────────────────────────────
+  LOGON TYPE BREAKDOWN
+────────────────────────────────────────────────────────────
+  Network                          30
+  Interactive (Local)              12
+  Remote/RDP                        5
+
+────────────────────────────────────────────────────────────
+  ⚠️  BRUTE FORCE SUSPECTS DETECTED
+────────────────────────────────────────────────────────────
+  🚨  administrator  —  23 failed attempts
+  🚨  jsmith  —  7 failed attempts
+============================================================
+
+  📄 Report saved to: failed_logins_20260528_060014.txt
+  📧 Alert email sent successfully.
+============================================================
+
+NOTE: All usernames, IP addresses, and hostnames in this
+sample are fictional. Generated in an isolated test
+environment. No real log data is committed to this repo.
+============================================================
