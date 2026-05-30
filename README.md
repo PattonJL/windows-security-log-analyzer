@@ -71,6 +71,7 @@ or commit history.*
 ---
 
 ## Project Structure
+
 windows-security-log-analyzer/
 ├── login_analyzer.py        # Core logic: pull, analyze, report, alert
 ├── setup_env.example.ps1    # Credential setup template (placeholders only)
